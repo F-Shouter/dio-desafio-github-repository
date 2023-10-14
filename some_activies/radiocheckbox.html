@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox and Radio in Form</title>
+</head>
+<body>
+    <h1> Make your request! </h1>
+    <p><blockquote>👩‍🍳 <i>"We, from <strong>PIZZANNE</strong>, cook with love in every pizza!"</i></blockquote></p>
+    <form method="get" onsubmit="alert('Thank you for making the request!!! 😊');">
+        <h2>🍕Pizza:</h2>
+        <input type="checkbox" name="pizza[]" value="pepperoni"> Pepperoni <br>
+        <input type="checkbox" name="pizza[]" value="cheese"> Cheese <br>
+        <input type="checkbox" name="pizza[]" value="portuguese"> Portuguese <br>
+
+        <h2>🥖 Stuffed crust:</h2>
+        <input type="radio" name="crust" value="yes"> Yes <br>
+        <input type="radio" name="crust" value="no" > No <br>
+
+        <h2>🍹Drinks:</h2>
+        <input type="checkbox" name="drink" value="water[]" > Water <br>
+        <input type="checkbox" name="drink" value="soda[]" > Soda <br>
+        <input type="checkbox" name="drink" value="natural juice[]" > Natural juice <br>
+
+        <br><button type="submit">SEND</button>
+
+
+        
+    </form>
+
+</body>
+</html>
