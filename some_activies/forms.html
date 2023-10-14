@@ -8,9 +8,11 @@
 <body>
     <h2>
     <form name="signup" method="get" onsubmit="alert('EAE, MEU JOVEM!!!');" autocomplete="on">
-        name: <input type="text" name="name" /><br>
-        age: <input type="number" name="age" /><br>
-        password: <input type="password" name="password" /><br>
+        <label>name:</label> <input type="text" name="name" /><br>
+        <label>age:</label> <input type="number" name="age" min="18" max="30"/><br>
+        <label>password:</label> <input type="password" name="password" /><br>
+        <label>range</label> <input type="range" name="range"><br>
+        <label>button:</label> <input type="button" name="Send" value="send" /><br>
         <button type="submit">Send</button>
     </form>
     </h2>
