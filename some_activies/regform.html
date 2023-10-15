@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        .botao {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" onsubmit="alert('Formulário ENVIADO!');" autocomplete="off" method="post">
+        <h1>Formulário de cadastro:</h1>
+        <div class="row">
+            <label>Nome:</label><input type="text" name="name">
+            <label>E-mail:</label><input type="email" name="email">
+        </div>
+        <div class="row">
+            <label>Profissão:</label><input type="text" name="profissao">
+            <label>Empresa:</label><input type="text" name="empresa">
+        </div>
+        <div class="row">
+            <label>Endereço:</label><input type="text" name="endereco">
+            <label>Número:</label><input type="number" name="number" min="0" max="10">
+        </div>
+        <div class="row">
+            <label>Bairro:</label><input type="text" name="bairro">
+         </div>
+         <div class="row">
+            <label>Cidade/UF:</label><input type="text" name="cidade_uf">
+         </div>
+         <div class="row">
+            <label>Celular:</label><input type="tel" name="celular">
+            <label>Whatsapp:</label><input type="tel" name="whatsapp">
+        </div>
+        <div class="row">
+            <label>Linkedin:</label><input type="url" name="linkedin">
+            <label>GitHub:</label><input type="url" name="gitHub">
+        </div>
+        
+        <div class="botao">
+            <br>
+            <button type="reset">Limpar formulário</button>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
