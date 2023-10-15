@@ -1,5 +1,5 @@
 # 📚 Dio repository
- Repository for studies, challenges, and other things. 
+ Repository for studies, challenges, and other things .  
 
  ## Branchs:
  branch | description | url
