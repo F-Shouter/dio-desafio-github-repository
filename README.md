@@ -4,6 +4,6 @@
  ## Branchs:
  branch | description | url
  --- | --- | ---
- studies | bootcamp game | [link](https://web.dio.me/track/potencia-tech-ifood-desenvolvimento-de-jogos)
+ studies | Game development studies from the bootcamp. | [link](https://web.dio.me/track/potencia-tech-ifood-desenvolvimento-de-jogos)
 
 
