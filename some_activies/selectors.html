@@ -13,28 +13,88 @@
         * 4. Seletor universal
         * 5. Seletor de atributo
         */
-        
+        * {
+            font-family: sans-serif;
+        }
         h1 {
-            background-color: aquamarine;
+            background-color: rgba(127, 255, 212, 0.39);
         }
         div {
-            background-color: aquamarine;
+            background-color: rgba(247, 243, 187, 0.562);
         }
         li {
-            background-color: rgb(106, 106, 255);
+            background-color: rgba(223, 255, 197, 0.473);
+        }
+        #paragrafo-boas-vindas {
+            background-color: rgba(165, 42, 42, 0.459);
+            color: white;
+        }
+        #paragrafo-lorem {
+            background-color: rgba(255, 228, 196, 0.514);
+        }
+        .seletores-mais-comuns {
+            color: rgb(255, 60, 0);
+        }
+        .texto-maiusculo {
+            text-transform: uppercase;
+        }
+        [title] {
+            color: rgb(20, 17, 39);
+        }
+        [title=DS] {
+            color: blue;
+        }
+        [title~=jogo] {
+            background-color: rgb(226, 43, 43);
+        }
+        [title|=nitendo] {
+            background-color: yellow;
+        }
+        [href^="www."] {
+            font-size: 29px;
+        }
+        [href$="login"] {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
     </style>
 </head>
 <body>
     <h1>Selectors CSS</h1>
-    <p>Welcome!</p>
+    <p id="paragrafo-boas-vindas">Welcome!</p>
+    <p id="paragrafo-lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reprehenderit debitis placeat natus ea error maiores maxime ab doloremque magni optio vitae obcaecati sapiente expedita, porro nesciunt ut quas aliquid.</p>
     <div>
         <ul>
-            <li><b>tipo:</b>busca elementos por um tag HTML específica</li>
-            <li><b>id (#):</b>busca elementos através do atributo "id", id é único para um elemento dentro da mesma página HTML. Para cada página, ele não pode se repetir.</li>
-            <li><b>classes (.):</b>busca elementos através do atributo "class"</li>
-            <li><b>universal (*):</b>seleciona todos os elementos HTML</li>
-            <li><b>atributo (atribut):</b>seleciona elementos que possuem um atributo específico em nosso documento HTML e conseguimos também ar atributos com um valor específico.</li>
+            <li class="seletores-mais-comuns texto-maiusculo"><b>tipo:</b>busca elementos por um tag HTML específica</li><br>
+            <li class="seletores-mais-comuns texto-maiusculo"><b>id (#):</b>busca elementos através do atributo "id", id é único para um elemento dentro da mesma página HTML. Para cada página, ele não pode se repetir. <u>id não pode ter espaços dentro das aspas!</u> </li><br>
+            <li class="seletores-mais-comuns"><b>classes (.):</b>busca elementos através do atributo "class". Classe serve para identificar um grupo de elementos, então podemos dar estilos para vários elementos de uma vez só.</li><br>
+            <li><b>universal (*):</b>seleciona todos os elementos HTML</li><br>
+            <li class="texto-maiusculo"><b>atributo [(atributo)]:</b>seleciona elementos que possuem um atributo específico em nosso documento HTML e conseguimos também ar atributos com um valor específico. 
+                <ul>
+                    <br> <li><strong>[atributo=valor]</strong>, o valor tem que ser exatamente igual!</li>
+                    <li><strong>[atributo~=valorX]</strong>, o valorX vai ser procurado nos titles, ou o valorX exato ou separado por espaço! O valorX tem que ser isolado no atributo! </li>
+                    <li><strong>[atributo|=valorY]</strong>, funciona com o valorY só, ou com o valorY-valorZ. Porém o valorY tem que ser o primeiro! e grudado com o ifem!</li>
+                    <li><strong>[atributo*=valor]</strong>vai procurar o valor independente do lugar, por exemplo dentro de um link.</li>
+                </ul>
+                    <ul>
+                        <br><li><strong>PREFIXO:</strong> o começo do valor precisa estar entre aspas!
+                            <ul>
+                                <li><strong>[atributo^=começo do valor]</strong></li>
+                            </ul>
+                        <br><li><strong>SULFIXO</strong> o fim do valor precisa estar entre aspas! ele consegue pegar independente se estiver separado com pontos ou barras.</li>
+                            <ul>
+                                <li><strong>[atributo$=fim do valor]</strong></li>
+                            </ul>
+                        </li>
+                    </ul></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+           <li><a title="jogo Dio" href="www.dio.com.br">dio</a></li>
+           <li><a title="jogo Net" href="www.dio.com.brlogin">net</a></li>
+           <li><a title="nitendo-DS" href="wwws.dio.com.br/login">ds</a></li>
+           <li><a>spo</a></li>
+           <li><a title="nitendo">nite</a></li>
         </ul>
     </div>
 </body>
