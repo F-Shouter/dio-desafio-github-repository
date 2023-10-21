@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child combinator</title>
+    <style>
+        div > p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>paragrafo 1 dentro da div</p>
+        <p>paragrafo 2 dentro da div</p>
+        <span>
+            <p>paragrafo 3 dentro do span e da div</p>
+        </span>
+    </div>
+    <p>paragrafo 4 fora da div</p>
+    <p>paragrafo 5 fora da div</p>
+</body>
+</html>

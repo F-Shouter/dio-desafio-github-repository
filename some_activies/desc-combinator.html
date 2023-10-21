@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descendant combinator</title>
+    <style>
+        li {
+            color: red;
+        }
+        li li {
+            color: green;
+        }
+        #lista-01 li {
+            background-color: aquamarine;
+        }
+        .fundo-verde #sublista-02 li {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <ul>
         <li class="fundo-verde" id="lista-01">
             <div>item 1</div>
-            <ul>
+            <ul id="sublista-01">
                 <li>subitem A</li>
                 <li>subitem B</li>
             </ul>
         </li>
         <li class="fundo-verde" id="lista-02">
             <div>item 2</div>
-            <ul>
+            <ul id="sublista-02">
                 <li>subitem A</li>
                 <li>subitem B</li>
             </ul>
         </li>
         <li class="fundo-azul" id="lista-03">
             <div>item 3</div>
-            <ul>
+            <ul id="sublista-03">
                 <li>subitem A</li>
                 <li>subitem B</li>
             </ul>
