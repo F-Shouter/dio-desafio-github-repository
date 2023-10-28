@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "fonte-legal";
+    src: url('../font-css-activies/assets/VinaSans-Regular.ttf');
+}
+p {
+    font-family: fonte-legal;
+}
