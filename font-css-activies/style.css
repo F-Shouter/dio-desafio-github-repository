@@ -1,7 +1,5 @@
-@font-face {
-    font-family: "fonte-legal";
-    src: url('../font-css-activies/assets/VinaSans-Regular.ttf');
-}
+
+@import url(./global.css);
 p {
-    font-family: fonte-legal;
+    font-family: 'Nabla' ;
 }
