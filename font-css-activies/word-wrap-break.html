@@ -15,6 +15,16 @@
             background-color: lightsalmon;
             word-wrap: break-word;
         }
+        #div03 {
+            width: 200px;
+            background-color: lightsalmon;
+            word-break: break-all;
+        }
+        #div04 {
+            width: 200px;
+            background-color: lightsalmon;
+            word-break: keep-all;
+        }
     </style>
 </head>
 <body>
@@ -22,11 +32,21 @@
     <p>Define, caso uma palavra seja muito grande para caber em uma linha, se ela será quebrada em qualquer caractere para que uma parte dela fique na linha e o restante na próxima, ou se não, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento.</p><br>
     <code>word-wrap: normal;</code><br>
     <div id="div01">
-        Trilha de CSSlololololololol tskjksjjjjjjjjjjjjssssssssssssssssssssssssssskkkkkkkkkkkkkkk
+        Trilha de CSSlololololololol tskjksjjjjjjjjjjjjsssssssssssssssssssssssssss
         kkkkkkkkkkkkkk
     </div><br>
     <code>word-wrap: break-word;</code><br>
     <div id="div02">
+        Trilha de CSSlololololololol tskjksjjjjjjjjjjjjsssssssssssssssssssssssssss
+        kkkkkkkkkkkkkk
+    </div><br>
+    <code>word-break: break-all;</code><br>
+    <div id="div03">
+        Trilha de CSSlololololololol tskjksjjjjjjjjjjjjsssssssssssssssssssssssssss
+        kkkkkkkkkkkkkk
+    </div><br>
+    <code>word-break: keep-all;</code><br>
+    <div id="div04">
         Trilha de CSSlololololololol tskjksjjjjjjjjjjjjsssssssssssssssssssssssssss
         kkkkkkkkkkkkkk
     </div>
