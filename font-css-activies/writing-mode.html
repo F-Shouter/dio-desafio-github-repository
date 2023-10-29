@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>writing-mode</title>
+    <style>
+        .exemplo {
+            background-color: greenyellow;
+            width: 120px;
+            height: 120px;
+            padding: 5px;
+        }
+        #ex-01 {
+           writing-mode: horizontal-tb ; 
+        }
+        #ex-02 {
+            writing-mode: vertical-rl;
+        }
+        #ex-03 {
+            writing-mode: vertical-lr;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>writing-mode</code></h2>
+    <p>Define a orientação do texto (vertical ou horizontal)</p> 
+    <p><i>Exemplo:</i> 
+        
+    <code>writing-mode: horizontal-tb;</code></p>
+    <p id="ex-01" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz.
+    </p><br><br>
+
+    <code>writing-mode: vertical-rl;</code></p>
+    <p id="ex-02" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz.
+    </p><br><br>
+
+    <code>writing-mode: vertical-rl;</code></p>
+    <p id="ex-03" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz.
+    </p><br><br>
+
+    
+</body>
+</html>
